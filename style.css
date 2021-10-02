@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #121212;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    background-color: #212121;
+}
+label.logo{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    line-height: 80px;
+    padding-left: 15px;
+}
+.toggle-button{
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:15px;
+    width: 30px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.nav ul{
+    padding-right: 35px;
+    padding-left: 50px;
+    text-align: right;
+    display: none;
+    text-decoration: none;
+    float: right;
+    line-height: 80px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    background-color: #212121;
+}
+.nav ul li{
+    padding-left: 10px;
+}
+.nav ul a{
+    color: white;
+}
+.nav ul a:hover{
+    color: red;
+}
+.content{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: white;
+    /*width: 100%;*/
+    /*padding: 30px 15px 0px 15px;*/
+    padding-top: 30px;
+}
+.card{
+    width: 310px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    transition: transform 0.5s;
+}
+.card :hover{
+    transform: translateY(-10px);
+}
+.card-content{  
+    background-color: #212121;
+    padding: 30px 15px 30px 15px;
+}
+
+.card-content h2{
+    padding-bottom: 10px;
+}
+.card-content p{
+    padding-bottom: 30px;
+}
+.card-content .btn{
+    background-color: red;
+    width: 125px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+.card-content .btn a{
+   color: white;
+   font-size: 14px;
+   font-weight: bold;
+}
+.footer{
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+footer{
+    background-color: #212121;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.header{
+    padding-top: 30px;
+    margin-inline: auto;
+    width: min(85%, 70.5rem);
+    color:  #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header .btn{
+    background-color: red;
+    width: 125px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+.header .btn a{
+   color: white;
+   font-size: 14px;
+   font-weight: bold;
+}
+.header-content p{
+    margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) {
+    label.logo{
+        padding: 0px 25px 0px 25px;
+    }
+    .toggle-button{
+        display: none;
+    }
+    .nav ul{
+        padding-right: 25px;
+        display: flex;
+        text-decoration: none;
+        float: right;
+        line-height: 80px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+    }
+    .nav ul li{
+        padding-left: 30px;
+        transition: transform 0.5s;
+    }
+
+    .content{
+        display: flex;
+        margin: 0px 15px 0px 15px;
+    }
+    .card{
+        width: 310px;
+        padding-bottom: 15px;
+        margin: 0 auto;
+        padding: 0px 10px 30px 10px;
+    }
+    .card-content{
+        
+        background-color: #212121;
+        padding: 30px 15px 30px 15px;
+    }
+}
